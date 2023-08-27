@@ -1,3 +1,4 @@
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material"
 import "./globals.css"
 import type { Metadata } from "next"
 import { DM_Sans } from "next/font/google"
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>{children}</body>
+      <body className={dmSans.className}>
+        <CssBaseline />
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,3 +1,5 @@
+import MuiComponent from "@/components/MuiComponent"
+import { Button } from "@mui/material"
 import Image from "next/image"
 
 export default function BlogLayout({
@@ -13,13 +15,18 @@ export default function BlogLayout({
           width={29 * (171 / 55)}
           height={29}
           alt="Schej logo"
-          objectFit="contain"
         />
         <div className="flex-grow" />
-        <div>How it works</div>
-        <div>Blog</div>
+        <MuiComponent component={Button} variant="text">
+          How it works
+        </MuiComponent>
+        <MuiComponent component={Button} variant="text">
+          Blog
+        </MuiComponent>
         <div className="flex-grow" />
-        <div>Sign in</div>
+        <MuiComponent component={Button} variant="text">
+          Sign in
+        </MuiComponent>
       </div>
       {children}
     </div>
