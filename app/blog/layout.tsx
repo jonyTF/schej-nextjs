@@ -6,12 +6,12 @@ export default function BlogLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className="max-w-6xl mx-auto p-5">
       <div className="flex items-center gap-4 mb-16">
         <Image
           src="/schej_logo_with_text.png"
-          width={30 * (171 / 55)}
-          height={30}
+          width={29 * (171 / 55)}
+          height={29}
           alt="Schej logo"
           objectFit="contain"
         />
