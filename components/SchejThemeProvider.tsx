@@ -2,10 +2,26 @@
 
 import { ThemeProvider, createTheme } from "@mui/material"
 
-const theme = createTheme({
+let theme = createTheme({
+  typography: {
+    fontFamily: ["DM Sans"].join(","),
+  },
   palette: {
     primary: {
       main: "#00994C",
+    },
+  },
+  components: {
+    MuiButton: {
+      defaultProps: {
+        color: "inherit",
+      },
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          fontWeight: 500,
+        },
+      },
     },
   },
 })
