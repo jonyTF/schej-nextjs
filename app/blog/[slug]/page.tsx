@@ -1,11 +1,13 @@
 import markdownToHtml, { getAllPosts, getPostBySlug } from "@/lib/posts"
+import Header from "./components/Header"
+import PostType from "@/types/post"
 
 interface PostProps {
   params: { slug: string }
 }
 
 export default async function Post({ params }: PostProps) {
-  const post = getPostBySlug(params.slug, [
+  const post: PostType = getPostBySlug(params.slug, [
     "title",
     "date",
     "slug",
@@ -13,14 +15,16 @@ export default async function Post({ params }: PostProps) {
     "content",
     "ogImage",
     "coverImage",
-  ])
+  ]) as unknown as PostType
   post.content = await markdownToHtml(post.content || "")
 
   return (
     <div>
-      <h1 className="text-5xl font-semibold">{post.title}</h1>
-      <small>{post.date}</small>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <Header post={post} />
+      <div
+        className="leading-relaxed space-y-4"
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      />
     </div>
   )
 }
