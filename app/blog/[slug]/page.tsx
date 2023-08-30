@@ -1,12 +1,13 @@
 import markdownToHtml, { getAllPosts, getPostBySlug } from "@/lib/posts"
 import Header from "./components/Header"
 import PostType from "@/types/post"
+import { Metadata, ResolvingMetadata } from "next"
 
-interface PostProps {
+interface Props {
   params: { slug: string }
 }
 
-export default async function Post({ params }: PostProps) {
+export default async function Post({ params }: Props) {
   const post: PostType = getPostBySlug(params.slug, [
     "title",
     "date",
@@ -19,14 +20,32 @@ export default async function Post({ params }: PostProps) {
   post.content = await markdownToHtml(post.content || "")
 
   return (
-    <div>
-      <Header post={post} />
-      <div
-        className="leading-relaxed space-y-4"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
-    </div>
+    <>
+      <div>
+        <Header post={post} />
+        <div
+          className="leading-relaxed space-y-4"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </div>
+    </>
   )
+}
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const post = getPostBySlug(params.slug, ["title", "ogImage"])
+
+  const title = `${post.title} | Schej blog`
+
+  return {
+    title,
+    openGraph: {
+      images: [post.ogImage],
+    },
+  }
 }
 
 export async function generateStaticParams() {

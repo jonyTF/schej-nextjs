@@ -28,8 +28,7 @@ export default function BlogLayout({
             Blog
           </MuiComponent>
         </Link>
-        <div className="flex-grow" />
-        <MuiComponent component={Button} variant="text">
+        <MuiComponent component={Button} variant="contained" color="primary">
           Sign in
         </MuiComponent>
       </div>
