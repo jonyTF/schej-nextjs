@@ -3,6 +3,7 @@ import { join } from "path"
 import matter from "gray-matter"
 import { remark } from "remark"
 import html from "remark-html"
+import PostType from "@/types/post"
 
 const postsDirectory = join(process.cwd(), "_posts")
 
@@ -16,27 +17,23 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content } = matter(fileContents)
 
-  type Items = {
-    [key: string]: string
-  }
-
-  const items: Items = {}
+  const post: PostType = {}
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === "slug") {
-      items[field] = realSlug
+      post[field] = realSlug
     }
     if (field === "content") {
-      items[field] = content
+      post[field] = content
     }
 
     if (typeof data[field] !== "undefined") {
-      items[field] = data[field]
+      post[field as keyof PostType] = data[field]
     }
   })
 
-  return items
+  return post
 }
 
 export function getAllPosts(fields: string[] = []) {
@@ -44,7 +41,15 @@ export function getAllPosts(fields: string[] = []) {
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+    .sort((post1, post2) => {
+      if (!post1.date) {
+        return 1
+      } else if (!post2.date) {
+        return -1
+      }
+
+      return post1.date > post2.date ? -1 : 1
+    })
   return posts
 }
 

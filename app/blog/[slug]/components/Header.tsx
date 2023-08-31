@@ -11,14 +11,16 @@ export default function Header({ post }: { post: PostType }) {
         {post.title}
       </h1>
       <div className="text-dark-gray mb-8">{dateString}</div>
-      <div className="w-full aspect-video relative">
-        <Image
-          fill={true}
-          src={post.coverImage}
-          alt={`Cover image for ${post.title}`}
-          className="object-cover"
-        />
-      </div>
+      {post.coverImage && (
+        <div className="w-full aspect-video relative">
+          <Image
+            fill={true}
+            src={post.coverImage}
+            alt={`Cover image for ${post.title}`}
+            className="object-cover"
+          />
+        </div>
+      )}
     </div>
   )
 }
