@@ -1,5 +1,15 @@
-@tailwind base;
 @import "./preflight.css";
+
+@tailwind base;
+@layer base {
+  h2 {
+    @apply text-2xl font-medium pt-4;
+  }
+
+  p > a {
+    @apply text-green underline;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -7,11 +17,4 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-h2 {
-  padding-top: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
 }
