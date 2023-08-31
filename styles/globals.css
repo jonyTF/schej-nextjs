@@ -3,11 +3,15 @@
 @tailwind base;
 @layer base {
   h2 {
-    @apply text-2xl font-medium pt-4;
+    @apply text-xl sm:text-2xl font-semibold pt-4;
   }
 
   p > a {
     @apply text-green underline;
+  }
+
+  p {
+    @apply text-lg;
   }
 }
 @tailwind components;

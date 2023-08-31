@@ -2,6 +2,7 @@ import markdownToHtml, { getAllPosts, getPostBySlug } from "@/lib/posts"
 import Header from "./components/Header"
 import PostType from "@/types/post"
 import { Metadata, ResolvingMetadata } from "next"
+import Footer from "./components/Footer"
 
 interface Props {
   params: { slug: string }
