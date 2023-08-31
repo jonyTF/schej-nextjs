@@ -2,7 +2,7 @@ import PostType from "@/types/post"
 import dayjs from "dayjs"
 import Image from "next/image"
 
-export default function Header({ post }: { post: PostType }) {
+export default function PostHeader({ post }: { post: PostType }) {
   const dateString = dayjs(post.date).format("MMMM D, YYYY")
 
   return (

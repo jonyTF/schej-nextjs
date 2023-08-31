@@ -1,5 +1,5 @@
 import markdownToHtml, { getAllPosts, getPostBySlug } from "@/lib/posts"
-import Header from "./components/Header"
+import PostHeader from "./components/PostHeader"
 import { Metadata, ResolvingMetadata } from "next"
 
 interface Props {
@@ -20,7 +20,7 @@ export default async function Post({ params }: Props) {
   return (
     <>
       <div>
-        <Header post={post} />
+        <PostHeader post={post} />
         <div
           className="leading-relaxed space-y-4"
           dangerouslySetInnerHTML={{ __html: post.content }}
@@ -36,7 +36,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const post = getPostBySlug(params.slug, ["title", "ogImage"])
 
-  const title = `${post.title} | Schej blog`
+  const title = `${post.title} | Schej`
 
   return {
     title,

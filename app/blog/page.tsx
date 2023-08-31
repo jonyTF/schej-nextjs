@@ -1,5 +1,10 @@
 import { getAllPosts } from "@/lib/posts"
 import PostList from "./components/PostList"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Blog | Schej",
+}
 
 export default function BlogHome() {
   const posts = getAllPosts(["slug", "title", "date", "coverImage"])
