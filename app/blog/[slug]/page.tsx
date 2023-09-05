@@ -46,6 +46,9 @@ export async function generateMetadata(
   }
 }
 
+export const dynamic = "error"
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   const posts = getAllPosts(["slug"])
 
