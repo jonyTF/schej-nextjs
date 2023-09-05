@@ -34,12 +34,14 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const post = getPostBySlug(params.slug, ["title", "ogImage"])
+  const post = getPostBySlug(params.slug, ["title", "excerpt", "ogImage"])
 
   const title = `${post.title} | Schej`
+  const description = post.excerpt
 
   return {
     title,
+    description,
     openGraph: {
       images: [post.ogImage!],
     },

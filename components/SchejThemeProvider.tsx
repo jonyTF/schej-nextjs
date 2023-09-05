@@ -1,10 +1,11 @@
 "use client"
 
+import { dmSans } from "@/app/layout"
 import { ThemeProvider, createTheme } from "@mui/material"
 
 let theme = createTheme({
   typography: {
-    fontFamily: ["DM Sans"].join(","),
+    fontFamily: dmSans.style.fontFamily,
   },
   palette: {
     primary: {

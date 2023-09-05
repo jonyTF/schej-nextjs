@@ -4,6 +4,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Blog | Schej",
+  description: "Sharing tips and tricks for group event scheduling",
 }
 
 export default function BlogHome() {
