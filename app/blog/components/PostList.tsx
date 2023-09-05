@@ -9,7 +9,7 @@ export default function PostList({ posts }: Props) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {posts.map((post) => (
-        <PostCard post={post} />
+        <PostCard key={post.slug} post={post} />
       ))}
     </div>
   )

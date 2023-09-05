@@ -7,13 +7,13 @@ import schejLogo from "@/public/schej_logo_with_text.png"
 export default function Header() {
   return (
     <div className="flex items-center gap-4 mb-16">
-      <Link href="https://schej.it">
+      <Link href="/">
         <div className="relative w-[70px] sm:w-[90px]">
           <Image src={schejLogo} alt="Schej logo" />
         </div>
       </Link>
       <div className="flex-grow" />
-      <Link href="https://schej.it/#how-it-works">
+      <Link href="/#how-it-works">
         <MuiComponent component={Button} variant="text">
           How it works
         </MuiComponent>
@@ -23,9 +23,11 @@ export default function Header() {
           Blog
         </MuiComponent>
       </Link>
-      <MuiComponent component={Button} variant="contained" color="primary">
-        Sign in
-      </MuiComponent>
+      <Link href="/">
+        <MuiComponent component={Button} variant="contained" color="primary">
+          Sign in
+        </MuiComponent>
+      </Link>
     </div>
   )
 }

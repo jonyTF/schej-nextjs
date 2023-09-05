@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="text-white text-2xl sm:text-3xl font-bold mb-8">
         Easily find a time that works for everybody with Schej
       </div>
-      <Link href="https://schej.it">
+      <Link href="/">
         <MuiComponent
           component={Button}
           variant="outlined"

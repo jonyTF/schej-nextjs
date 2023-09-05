@@ -15,7 +15,7 @@ export default function MobileHeader() {
   return (
     <>
       <div className="flex items-center gap-4">
-        <Link href="https://schej.it">
+        <Link href="/">
           <div className="relative w-[70px] sm:w-[90px]">
             <Image src={schejLogo} alt="Schej logo" />
           </div>
@@ -33,12 +33,12 @@ export default function MobileHeader() {
                 Blog
               </MuiComponent>
             </Link>
-            <Link href="https://schej.it/#how-it-works">
+            <Link href="/#how-it-works">
               <MuiComponent component={Button} className="w-full">
                 How it works
               </MuiComponent>
             </Link>
-            <Link href="https://schej.it">
+            <Link href="/">
               <MuiComponent
                 component={Button}
                 variant="contained"
