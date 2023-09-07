@@ -6,7 +6,7 @@ date: "2023-09-07T19:00:00"
 ogImage: "/assets/blog/about/cover.png"
 ---
 
-**TLDR**: We are launching a bi-monthly blog about our scheduling site which integrates directly with Google Calendar to save you time. Follow our social media and check back here for more!
+***TLDR**: We are launching a bi-monthly blog about our scheduling site which integrates directly with Google Calendar to save you time. Follow our social media and check back here for more!*
 
 If you’re a college student, young professional, or anyone really, chances are you’ve had a hard time scheduling a meeting or an event with a larger group. That’s why we’ve created Schej, a scheduling tool which strikes the perfect balance between extreme simplicity and specialized usefulness.
 
