@@ -2,7 +2,7 @@
 title: "Welcome to the Schej blog!"
 excerpt: "We are launching a bi-monthly blog about our scheduling site which integrates directly with Google Calendar to save you time. Follow our social media and check back here for more!"
 coverImage: "/assets/blog/about/cover.png"
-date: "2023-09-06T19:00:00"
+date: "2023-09-07T19:00:00"
 ogImage: "/assets/blog/about/cover.png"
 ---
 
