@@ -25,7 +25,7 @@ Here is a table summarizing the key differences:
 
 While When2meet is functional, it feels dated and lacks modern group scheduling capabilities. Schej, on the other hand, shines with its sleek interface and Google Calendar integration. No more tabbing between When2meet and your Google Calendar to manually drag out your availability–Schej's seamless integration saves you time by taking the availability directly from your Google Calendar.
 
-Moreover, Schej supports signing in with multiple Google accounts, a major perk for users with personal and university accounts. This feature makes Schej the top pick for students, freelancers, and entrepreneurs seeking an efficient scheduling solution. \
+Moreover, Schej supports signing in with multiple Google accounts, a major perk for users with personal and university accounts. This feature makes Schej the top pick for students, freelancers, and entrepreneurs seeking an efficient scheduling solution.
 
 Once everyone's availability has been added, Schej makes it easy to schedule a Google Calendar event directly from Schej at the most convenient time for all participants.
 
