@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 
 export default function BlogHome() {
   const posts = getAllPosts(["slug", "title", "date", "coverImage"])
+  posts.sort(
+    (a, b) => new Date(a.date!).getTime() - new Date(b.date!).getTime()
+  )
 
   return (
     <div className="max-w-6xl m-auto">

@@ -44,6 +44,7 @@ export async function generateMetadata(
     description,
     openGraph: {
       images: [post.ogImage!],
+      description: post.excerpt,
     },
   }
 }

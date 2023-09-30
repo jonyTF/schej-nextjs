@@ -11,7 +11,17 @@
   }
 
   p {
-    @apply text-lg;
+    @apply text-base sm:text-lg;
+  }
+
+  table,
+  th,
+  td {
+    @apply border border-gray p-4;
+  }
+
+  table {
+    @apply table-fixed w-full;
   }
 }
 @tailwind components;
