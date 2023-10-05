@@ -2,7 +2,7 @@
 title: "Schej vs When2meet: Which is Better?"
 excerpt: "Discover why Schej outshines When2meet for group meeting scheduling with its seamless Google Calendar integration and support."
 coverImage: "/assets/blog/when2meet/cover.png"
-date: "2020-09-30T09:00:00"
+date: "2023-09-30T09:00:00"
 ogImage: "/assets/blog/when2meet/cover.png"
 ---
 
