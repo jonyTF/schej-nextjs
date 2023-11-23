@@ -2,7 +2,7 @@
 title: "How to use When2meet and Google Calendar together"
 excerpt: "Learn how to use When2meet and Google Calendar together, and discover that there may be a different, better way to handle group scheduling."
 coverImage: "/assets/blog/gcalandwhen2meet/cover.png"
-date: "2023-09-30T09:00:00"
+date: "2023-11-30T09:00:00"
 ogImage: "/assets/blog/gcalandwhen2meet/cover.png"
 ---
 
