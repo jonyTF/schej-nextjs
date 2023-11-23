@@ -23,6 +23,14 @@
   table {
     @apply table-fixed w-full;
   }
+
+  ol {
+    @apply list-decimal list-inside;
+  }
+
+  li {
+    @apply my-2 text-base sm:text-lg;
+  }
 }
 @tailwind components;
 @tailwind utilities;
