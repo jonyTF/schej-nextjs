@@ -1,9 +1,9 @@
 ---
 title: "Schej vs Doodle: Which is Better?"
 excerpt: "Discover why Schej outshines Dododle for group meeting scheduling with its seamless Google Calendar integration and support."
-coverImage: "/assets/blog/schejvdoodle_01.png"
+coverImage: "/assets/blog/doodle/cover.png"
 date: "2024-01-22T9:00:00"
-ogImage: "/assets/blog/schejvdoodle_01.png"
+ogImage: "/assets/blog/doodle/cover.png"
 ---
 
 Group meetings are notoriously difficult to schedule, especially in college when students have varying class, activity, and sleep schedules. There are a variety of scheduling software tools available, including Doodle, which has useful features like integration with video conferencing and with external calendar applications. However, Doodle’s abundance of features and elements of the user experience are detrimental to a user’s goal of scheduling with ease. 
