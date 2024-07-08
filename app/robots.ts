@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/e/",
+      disallow: ["/e/", "/g/"],
     },
     sitemap: "https://schej.it/sitemap.xml",
   }
