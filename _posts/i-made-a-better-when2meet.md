@@ -1,6 +1,6 @@
 ---
 title: "I made a better When2meet"
-excerpt: ""
+excerpt: "It's basically When2meet with better UI and the ability to see your Google Calendar events while adding your availability. We’ve also been implementing many more features at the request of our users..."
 coverImage: "/assets/blog/i-made-a-better-when2meet/cover.png"
 date: "2024-07-08T09:00:00"
 ogImage: "/assets/blog/i-made-a-better-when2meet/cover.png"
