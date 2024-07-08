@@ -10,7 +10,20 @@ export default function PostHeader({ post }: { post: PostType }) {
       <h1 className="text-2xl sm:text-5xl font-semibold leading-tight mb-2">
         {post.title}
       </h1>
-      <div className="text-dark-gray mb-8">{dateString}</div>
+      {post.author ? (
+        <div className="text-base text-dark-gray mb-8">
+          By{" "}
+          <a
+            className="text-green font-medium"
+            href={post.author?.url}
+            target="_blank"
+          >
+            {post.author?.name}
+          </a>
+        </div>
+      ) : (
+        <div className="text-base text-dark-gray mb-8">{dateString}</div>
+      )}
       {post.coverImage && (
         <div className="w-full aspect-video relative">
           <Image

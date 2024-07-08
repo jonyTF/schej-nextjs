@@ -14,6 +14,7 @@ export default async function Post({ params }: Props) {
     "content",
     "ogImage",
     "coverImage",
+    "author",
   ])
   post.content = await markdownToHtml(post.content || "")
 

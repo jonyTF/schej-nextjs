@@ -15,7 +15,7 @@ export default function Footer() {
           className="text-white"
           size="large"
         >
-          Get started for free
+          Get started
         </MuiComponent>
       </Link>
     </div>
