@@ -14,8 +14,13 @@ export default function BlogHome() {
   )
 
   return (
-    <div className="max-w-6xl m-auto">
-      <h1 className="text-2xl font-bold mb-8">Featured posts</h1>
+    <div className="max-w-6xl mx-auto">
+      <h1 className="text-center text-xl sm:text-3xl font-medium mb-8">
+        Welcome to the Schej blog!
+      </h1>
+      <h2 className="text-lg text-very-dark-gray font-medium mb-2 sm:mb-8">
+        Featured posts
+      </h2>
       <PostList posts={posts} />
     </div>
   )
