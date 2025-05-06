@@ -11,13 +11,17 @@ export default function PostCard({ post }: Props) {
   if (!post.coverImage || !post.slug) return null
 
   const dateString = dayjs(post.date).format("MMMM D, YYYY")
+  const coverImage =
+    process.env.NODE_ENV === "production"
+      ? `/blog/${post.coverImage}`
+      : post.coverImage
 
   return (
     <Link href={`/${post.slug}`}>
       <div className="bg-white drop-shadow rounded overflow-hidden">
         <div className="w-full aspect-video relative">
           <Image
-            src={post.coverImage!}
+            src={coverImage}
             alt={`Cover image for ${post.title}`}
             fill={true}
             className="object-cover"

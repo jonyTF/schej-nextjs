@@ -28,7 +28,11 @@ export default function PostHeader({ post }: { post: PostType }) {
         <div className="w-full aspect-video relative">
           <Image
             fill={true}
-            src={post.coverImage}
+            src={
+              process.env.NODE_ENV === "production"
+                ? `/blog/${post.coverImage}`
+                : post.coverImage
+            }
             alt={`Cover image for ${post.title}`}
             className="object-cover"
           />

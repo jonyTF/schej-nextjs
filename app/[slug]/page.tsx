@@ -40,11 +40,16 @@ export async function generateMetadata(
   const title = `${post.title} | Schej`
   const description = post.excerpt
 
+  const ogImage =
+    process.env.NODE_ENV === "production"
+      ? `/blog/${post.ogImage}`
+      : post.ogImage
+
   return {
     title,
     description,
     openGraph: {
-      images: [post.ogImage!],
+      images: [ogImage!],
       description: post.excerpt,
     },
   }
