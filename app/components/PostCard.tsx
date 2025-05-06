@@ -13,7 +13,7 @@ export default function PostCard({ post }: Props) {
   const dateString = dayjs(post.date).format("MMMM D, YYYY")
 
   return (
-    <Link href={`/blog/${post.slug}`}>
+    <Link href={`/${post.slug}`}>
       <div className="bg-white drop-shadow rounded overflow-hidden">
         <div className="w-full aspect-video relative">
           <Image
