@@ -28,7 +28,7 @@ export default function PostCard({ post }: Props) {
           />
         </div>
         <div className="p-4 h-32 flex flex-col">
-          <div className="text-xl font-semibold mb-2 flex-1">{post.title}</div>
+          <div className="text-xl font-medium mb-2 flex-1">{post.title}</div>
           <div className="text-base text-dark-gray">{dateString}</div>
         </div>
       </div>

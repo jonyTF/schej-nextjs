@@ -24,7 +24,7 @@ export default function RootLayout({
         <body className={dmSans.className}>
           <CssBaseline />
           <Header />
-          <div className="pt-20 px-5 pb-5">{children}</div>
+          <div className="pt-[150px] px-5 pb-5">{children}</div>
         </body>
       </PHProvider>
     </html>
