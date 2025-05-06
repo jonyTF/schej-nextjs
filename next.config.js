@@ -12,6 +12,7 @@ const nextConfig = {
   //   }
   // },
   basePath: "/blog",
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
