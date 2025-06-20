@@ -37,7 +37,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const post = getPostBySlug(params.slug, ["title", "excerpt", "ogImage"])
 
-  const title = `${post.title} | Timeful`
+  const title = `${post.title} | Timeful (formerly Schej)`
   const description = post.excerpt
 
   const ogImage =
