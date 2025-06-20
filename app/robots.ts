@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       // disallow: ["/e/", "/g/"],
     },
-    sitemap: "https://schej.it/blog/sitemap.xml",
+    sitemap: "https://timeful.app/blog/sitemap.xml",
   }
 }

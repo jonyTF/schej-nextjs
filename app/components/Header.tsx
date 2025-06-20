@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import schejLogo from "@/public/schej_logo_with_text.png"
+import timefulLogo from "@/public/timeful_logo_with_text.png"
 import MuiComponent from "@/components/MuiComponent"
 import { Button } from "@mui/material"
 
@@ -10,11 +10,11 @@ export default function Header() {
       <div className="flex items-center gap-4 max-w-6xl mx-auto">
         <Link href="/">
           <div className="relative w-[70px] sm:w-[90px]">
-            <Image src={schejLogo} alt="Schej logo" />
+            <Image src={timefulLogo} alt="Timeful logo" />
           </div>
         </Link>
         <div className="flex-grow" />
-        <Link href="https://schej.it">
+        <Link href="https://timeful.app">
           <MuiComponent component={Button} variant="contained" color="primary">
             Get started
           </MuiComponent>

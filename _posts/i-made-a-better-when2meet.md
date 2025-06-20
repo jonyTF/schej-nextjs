@@ -9,7 +9,7 @@ author:
 showFooter: false
 ---
 
-I was frustrated with When2meet so my friends and I made a cool tool called Schej.
+I was frustrated with When2meet so my friends and I made a cool tool called Timeful.
 
 It's basically When2meet with better UI and the ability to see your Google Calendar events while adding your availability.
 
@@ -23,7 +23,7 @@ We’ve also been implementing many more features at the request of our users, i
 
 I've been using it a lot recently to schedule hang outs with my friends, especially as everybody comes back from college for the summer.
 
-Check it out at https://schej.it and let us know if you have any feedback in our [feedback form](https://forms.gle/9AgRy4PQfWfVuBnw8)!
+Check it out at https://timeful.app and let us know if you have any feedback in our [feedback form](https://forms.gle/9AgRy4PQfWfVuBnw8)!
 
 The code is fully open source at https://github.com/schej-it/schej.it
 
