@@ -42,7 +42,7 @@ export async function generateMetadata(
 
   const ogImage =
     process.env.NODE_ENV === "production"
-      ? `/blog/${post.ogImage}`
+      ? `https://timeful.app/blog/${post.ogImage}`
       : post.ogImage
 
   return {
