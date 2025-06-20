@@ -3,14 +3,8 @@ import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    // {
-    //   url: "https://schej.it",
-    //   lastModified: new Date(),
-    //   changeFrequency: "weekly",
-    //   priority: 1,
-    // },
     {
-      url: "https://schej.it/blog",
+      url: "https://timeful.app/blog",
       lastModified: new Date(),
     },
   ]
@@ -19,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...(posts.map((post) => ({
-      url: `https://schej.it/blog/${post.slug}`,
+      url: `https://timeful.app/blog/${post.slug}`,
       lastModified: new Date(), //new Date(post.date!),
     })) as MetadataRoute.Sitemap),
   ]

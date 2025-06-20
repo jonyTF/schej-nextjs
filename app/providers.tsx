@@ -13,6 +13,7 @@ if (typeof window !== "undefined") {
       url_allowlist: [
         // /http:\/\/localhost:3000\/blog.*/,
         /https:\/\/schej\.it\/blog.*/,
+        /https:\/\/timeful\.app\/blog.*/,
       ],
     },
   })
