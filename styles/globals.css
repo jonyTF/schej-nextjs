@@ -11,13 +11,13 @@
   }
 
   p {
-    @apply text-base sm:text-lg;
+    @apply text-base;
   }
 
   table,
   th,
   td {
-    @apply border border-gray p-4;
+    @apply border border-gray-300 p-4;
   }
 
   table {
@@ -29,7 +29,12 @@
   }
 
   li {
-    @apply my-2 text-base sm:text-lg;
+    @apply pl-4 my-2 text-base;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-6 italic text-gray-600;
+    /* @apply border-l-4 border-black pl-6 italic text-black; */
   }
 }
 @tailwind components;

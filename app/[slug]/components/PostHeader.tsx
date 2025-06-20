@@ -7,7 +7,7 @@ export default function PostHeader({ post }: { post: PostType }) {
 
   return (
     <div className="mb-8">
-      <h1 className="text-2xl sm:text-5xl font-semibold leading-tight mb-2">
+      <h1 className="text-2xl sm:text-4xl font-semibold leading-tight mb-2">
         {post.title}
       </h1>
       {post.author ? (
