@@ -12,7 +12,7 @@ Doodle used to be the obvious choice for scheduling group meetings. But in recen
 
 ## 1. Timeful (formerly Schej) – Fast, Clean, and Frictionless
 
-![Timeful scheduling interface](/assets/blog/doodle-alternatives/timeful.png)
+![Timeful scheduling interface](/blog/assets/blog/doodle-alternatives/timeful.png)
 
 [Timeful](https://timeful.app) was built specifically to fix the problems that make Doodle frustrating today.
 
@@ -29,7 +29,7 @@ Try it here: <a href="https://timeful.app">https://timeful.app</a>
 
 ## 2. When2meet – Lightweight and Functional
 
-![When2meet scheduling grid](/assets/blog/doodle-alternatives/when2meet.png)
+![When2meet scheduling grid](/blog/assets/blog/doodle-alternatives/when2meet.png)
 
 [When2meet](https://when2meet.com) isn't pretty, but it's reliable. You create a time grid, others mark when they're free, and that's it. No logins, no accounts, and barely any learning curve.
 
@@ -45,7 +45,7 @@ Try it here: <a href="https://when2meet.com">https://when2meet.com</a>
 
 ## 3. WhenIsGood – Private Responses for Sensitive Scheduling
 
-![WhenIsGood preference-based scheduling](/assets/blog/doodle-alternatives/whenisgood.png)
+![WhenIsGood preference-based scheduling](/blog/assets/blog/doodle-alternatives/whenisgood.png)
 
 [WhenIsGood](https://whenisgood.net)'s main advantage is privacy: only the poll creator can see individual responses, making it ideal for workplace scheduling or situations where you don't want everyone seeing each other's availability.
 
@@ -61,7 +61,7 @@ Try it here: <a href="https://whenisgood.net">https://whenisgood.net</a>
 
 ## 4. Rallly – Modern and Open Source
 
-![Rallly modern scheduling interface](/assets/blog/doodle-alternatives/rallly.png)
+![Rallly modern scheduling interface](/blog/assets/blog/doodle-alternatives/rallly.png)
 
 [Rallly](https://rallly.co) is a nice balance between form and function. It offers a polished design, easy poll creation, and is built on open-source principles like Timeful.
 
