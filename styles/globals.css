@@ -24,6 +24,10 @@
     @apply table-fixed w-full;
   }
 
+  ul {
+    @apply list-disc list-inside;
+  }
+
   ol {
     @apply list-decimal list-inside;
   }
@@ -35,6 +39,10 @@
   blockquote {
     @apply border-l-4 border-gray-300 pl-6 italic text-gray-600;
     /* @apply border-l-4 border-black pl-6 italic text-black; */
+  }
+
+  .post-content img:not(.header-img) {
+    @apply rounded-lg border border-gray-300 w-[80%] mx-auto shadow-lg my-8;
   }
 }
 @tailwind components;

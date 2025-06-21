@@ -25,18 +25,16 @@ export default function PostHeader({ post }: { post: PostType }) {
         <div className="text-base text-dark-gray mb-8">{dateString}</div>
       )}
       {post.coverImage && (
-        <div className="w-full aspect-video relative">
-          <Image
-            fill={true}
-            src={
-              process.env.NODE_ENV === "production"
-                ? `/blog/${post.coverImage}`
-                : post.coverImage
-            }
-            alt={`Cover image for ${post.title}`}
-            className="object-cover"
-          />
-        </div>
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className="header-img"
+          src={
+            process.env.NODE_ENV === "production"
+              ? `/blog/${post.coverImage}`
+              : post.coverImage
+          }
+          alt={`Cover image for ${post.title}`}
+        />
       )}
     </div>
   )

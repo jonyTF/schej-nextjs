@@ -20,7 +20,7 @@ export default async function Post({ params }: Props) {
 
   return (
     <>
-      <div>
+      <div className="post-content">
         <PostHeader post={post} />
         <div
           className="leading-relaxed space-y-4"
