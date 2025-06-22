@@ -6,6 +6,10 @@
     @apply text-xl sm:text-2xl font-semibold pt-4;
   }
 
+  h3 {
+    @apply text-lg sm:text-xl font-medium pt-2;
+  }
+
   p > a {
     @apply text-green underline;
   }
