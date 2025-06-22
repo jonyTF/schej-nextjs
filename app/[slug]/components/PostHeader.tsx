@@ -27,12 +27,8 @@ export default function PostHeader({ post }: { post: PostType }) {
       {post.coverImage && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          className="header-img"
-          src={
-            process.env.NODE_ENV === "production"
-              ? `/blog/${post.coverImage}`
-              : post.coverImage
-          }
+          className="aspect-video w-full header-img"
+          src={`/blog/${post.coverImage}`}
           alt={`Cover image for ${post.title}`}
         />
       )}
