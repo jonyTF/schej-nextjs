@@ -33,7 +33,7 @@ In this post, we'll compare **Doodle vs When2meet**, break down their pros and c
 
 Many users complain about:
 
-- Misleading ads that look like buttons
+- Misleading ads that clutter the page
 - Required signups for some features
 - A clunky process just to create a basic poll
 - Confusing final tallies when comparing times
