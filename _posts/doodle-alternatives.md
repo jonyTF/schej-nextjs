@@ -21,7 +21,7 @@ Doodle used to be the obvious choice for scheduling group meetings. But in recen
 - No misleading ads disguised as buttons
 - No forced signups for participants
 - Minimal clicks required to create a poll and share the link
-- Everyone's availability is clearly visible in one glance
+- Everyone's availability is clearly visible at a glance
 
 It's also open source, privacy-respecting, and optimized to load fast on any device. If you've ever felt annoyed by how long it takes to set up a Doodle poll or how confusing the final results are, Timeful is what you wish Doodle still was.
 
