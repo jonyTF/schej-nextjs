@@ -19,7 +19,7 @@ export default function PostCard({ post }: Props) {
   return (
     <Link href={`/${post.slug}`}>
       <div className="bg-white drop-shadow rounded overflow-hidden">
-        <div className="w-full aspect-video relative">
+        <div className="w-full aspect-[1200/630] relative">
           <Image
             src={coverImage}
             alt={`Cover image for ${post.title}`}
