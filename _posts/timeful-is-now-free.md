@@ -32,6 +32,6 @@ Previous subscribers also gain access to a special limited edition "Supporter" b
 
 ## We're still open source
 
-Timeful is [open source on GitHub](https://github.com/schej-it/timeful.app). If you want to support the project, the best way is to give us a star or share Timeful with your friends, classmates, and coworkers.
+Timeful is [open source on GitHub](https://github.com/schej-it/timeful.app). If you want to support the project, give us a star or share Timeful with your friends, classmates, and coworkers. You can also [donate](https://www.paypal.com/donate/?hosted_button_id=KWCH6LGJCP6E6) to help cover our server costs.
 
 Happy scheduling!
