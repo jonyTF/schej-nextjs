@@ -8,13 +8,13 @@ ogImage: "/assets/blog/doodle-vs-whenisgood/cover.png"
 
 If you're searching for a simple way to find a meeting time that works for everyone, chances are you've run into **Doodle** and **WhenIsGood**. These two tools are among the most popular for group scheduling—but which one is actually better?
 
-In this post, we'll compare **Doodle vs WhenIsGood**, break down their pros and cons, and introduce a third option—**Timeful (formerly Schej)**—that might be an even better fit in 2025.
+In this post, we'll compare **Doodle vs WhenIsGood**, break down their pros and cons, and introduce a third option—**Timeful**—that might be an even better fit in 2025.
 
 ---
 
 ## Quick Summary
 
-| Feature            | Doodle                | WhenIsGood            | Timeful <br/> (formerly Schej) |
+| Feature            | Doodle                | WhenIsGood            | Timeful |
 | ------------------ | --------------------- | --------------------- | ------------------------------ |
 | Account required?  | Yes                   | No                    | No                             |
 | Ads?               | Yes, often misleading | None                  | None                           |
@@ -70,7 +70,7 @@ If you need calendar sync or detailed availability features, Doodle can still wo
 
 ---
 
-## Timeful (formerly Schej): A Better Alternative in 2025
+## Timeful: A Better Alternative in 2025
 
 ![Timeful scheduling interface](/blog/assets/blog/doodle-vs-whenisgood/timeful.png)
 

@@ -12,7 +12,7 @@ Doodle used to be the obvious choice for scheduling group meetings. But in recen
 
 ---
 
-## 1. Timeful (formerly Schej) – Fast, Clean, and Frictionless
+## 1. Timeful – Fast, Clean, and Frictionless
 
 ![Timeful scheduling interface](/blog/assets/blog/doodle-alternatives/timeful.png)
 

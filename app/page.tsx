@@ -3,7 +3,7 @@ import PostList from "./components/PostList"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Blog | Timeful (formerly Schej)",
+  title: "Blog | Timeful",
   description: "Sharing tips and tricks for group event scheduling",
 }
 
