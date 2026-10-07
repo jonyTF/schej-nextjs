@@ -56,11 +56,32 @@ export function getAllPosts(fields: string[] = []) {
   return posts
 }
 
+/** Opens links to other sites in a new tab */
+function rehypeExternalLinks() {
+  return (tree: any) => {
+    const visit = (node: any) => {
+      if (node.type === "element" && node.tagName === "a") {
+        const href: string = node.properties?.href ?? ""
+        if (
+          /^https?:\/\//.test(href) &&
+          !/^https?:\/\/(www\.)?timeful\.app/.test(href)
+        ) {
+          node.properties.target = "_blank"
+          node.properties.rel = ["noopener", "noreferrer"]
+        }
+      }
+      node.children?.forEach(visit)
+    }
+    visit(tree)
+  }
+}
+
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype)
+    .use(rehypeExternalLinks)
     .use(rehypeStringify)
     .process(markdown)
   return result.toString()
